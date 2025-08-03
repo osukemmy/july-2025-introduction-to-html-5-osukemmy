@@ -7,37 +7,117 @@
   <meta name="keywords" content="Tutoring, Education, Online Classes, Study Help">
   <meta name="author" content="Bright Minds Tutors">
   <title>Bright Minds Tutors</title>
+   <style>
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+    }
+    nav li {
+      position: relative;
+    }
+    nav li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #f9f9f9;
+      list-style: none;
+      padding: 10px;
+      margin: 0;
+      border: 1px solid #ccc;
+    }
+    nav li:hover ul {
+      display: block;
+    }
+    nav li ul li {
+      padding: 5px 10px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Bright Minds Tutors</h1>
     <nav aria-label="Main navigation">
       <ul>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#subjects">Subjects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="#about">About Us</a>
+          <ul>
+            <li><a href="#our-mission">Our Mission</a></li>
+            <li><a href="#our-team">Our Team</a></li>
+            <li><a href="#location">Our Location</a></li>
+            <li><a href="#our-approach">Our Approach</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#subjects">Subjects</a>
+          <ul>
+            <li><a href="#math">Mathematics</a></li>
+            <li><a href="#science">Science</a></li>
+            <li><a href="#languages">Languages</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+          <ul>
+            <li><a href="#email">Email</a></li>
+            <li><a href="#phone">Phone</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section id="about">
-  <h2>About Us</h2>
-  <img src="my picture.jpg" alt="My Picture" width="200">
-  <p>At Bright Minds Tutors, we believe every student has the potential to shine. We provide personalized tutoring for learners of all ages to help them achieve academic success and build confidence.</p>
-</section>
+      <h2>About Us</h2>
+      <img src="mypicture.jpg" alt="MyPicture" width="200">
+      <p>At Bright Minds Tutors, we believe every student has the potential to shine. We provide personalized tutoring for learners of all ages to help them achieve academic success and build confidence.</p>
+    </section>
+
+    <section id="our-mission">
+      <h3>Our Mission</h3>
+      <p>Our mission is to provide customized learning solutions that cater to each student's unique strengths and weaknesses.</p>
+    </section>
+
+    <section id="our-team">
+      <h3>Our Team</h3>
+      <ul>
+        <li><strong>Director:</strong> Ruth Osoro</li>
+        <li>Ann Kaguta</li>
+        <li>Mary Janes</li>
+        <li>Bildad Owino</li>
+        <li>Steve Kitaka</li>
+      </ul>
+    </section>
+
+    <section id="location">
+      <h3>Our Location</h3>
+      <p>We are located in Nairobi, Kenya, with services available both in-person and online for learners across the country.</p>
+    </section>
+
+    <section id="our-approach">
+      <h3>Our Approach</h3>
+      <p>We use a combination of interactive lessons, practice, and feedback to enhance learning outcomes.</p>
+    </section>
 
     <section id="subjects">
       <h2>Subjects We Offer</h2>
-      <article>
+      <article id="math">
         <h3>Mathematics</h3>
         <p>From basic arithmetic to advanced calculus, we make math simple and fun.</p>
       </article>
-      <article>
+      <article id="science">
         <h3>Science</h3>
         <p>Explore physics, chemistry, and biology with hands-on learning methods.</p>
       </article>
-      <article>
+      <article id="languages">
         <h3>Languages</h3>
         <p>Improve your grammar, vocabulary, and fluency in English and other languages.</p>
       </article>
@@ -55,9 +135,11 @@
 
   <footer>
     <h2 id="contact">Contact Us</h2>
-    <p>Email: info@brightmindstutors.com</p>
-    <p>Phone: +254795123988</p>
+    <p id="email">Email: info@brightmindstutors.com</p>
+    <p id="phone">Phone: +254795123988</p>
     <p>&copy; 2025 Bright Minds Tutors. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
+
+ 
